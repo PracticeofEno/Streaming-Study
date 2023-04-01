@@ -70,6 +70,7 @@ rtmp {
 ```
 ffmpeg -re -i tmp.mp4 -c:v libx264 -preset veryfast -maxrate 3000k -bufsize 6000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -ar 44100 -f flv rtmp://localhost/live/test
 ```
+- 혹은 xsplit같은 프로그램으로 스트리밍을 보내면 해당 스트리밍이 
 
 - 크롬에서 HLSplayer extention을 설치후 http://localhost/live/test.m3u8 로 접속하면 아래 그림과 같이 스트리밍이 보임  
 <img src="https://user-images.githubusercontent.com/57505385/228704126-d83b620a-659c-42cf-8ea1-84cdbfc10326.png" width="70%" height="70%">
